@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report ScriptLanguage="CSharp" ReportInfo.Created="03/02/2022 17:00:13" ReportInfo.Modified="03/04/2022 10:52:08" ReportInfo.CreatorVersion="2022.1.14.0">
+  <Dictionary>
+    <CsvDataConnection Name="Connection" ConnectionString="rijcmlqUudWs/dQSVFzxfh83pcmrouo0IUkx9KMuIKpu3V8To/gDU/brk9eRcp/zk8an9IF2rh4mzmbiUHxwc2Y6YoizNIkJ0ejUMVUS7dgyJsMJt2iVM5atHuGabIQ4Qm+t2KVqxiFJtZiQhjL7Pz/Lup/pRZmGTCpbjccWpOnk3duPsLgk2c2i5AoM73zRtUfUMq3ARn7Vp/P8YYmxrPnozOEVdw4pwsP7o6H9IgtL3w5NKWrXWsScFdRzAWPBGXqeqefyBGWdcs+lE3OLfPnlcZ1EoziU3EvVCqAk+Tw12fiHsDPPHinEVrHf/Z4l4BvzjRC">
+      <TableDataSource Name="citizens_register" DataType="System.Int32" PropName="citizens_register1" Enabled="true" TableName="citizens_register">
+        <Column Name="last_name" DataType="System.String" PropName="Field0"/>
+        <Column Name="first_name" DataType="System.String" PropName="Field1"/>
+        <Column Name="middle_name" DataType="System.String" PropName="Field2"/>
+        <Column Name="birthday" DataType="System.String" PropName="Field3"/>
+        <Column Name="Field4" Enabled="false" DataType="System.String"/>
+      </TableDataSource>
+    </CsvDataConnection>
+  </Dictionary>
+  <ReportPage Name="Page1" Watermark.Font="Arial, 60pt">
+    <ReportTitleBand Name="ReportTitle1" Width="718.2" Height="56.7">
+      <TextObject Name="Text1" Left="217.35" Top="9.45" Width="302.4" Height="47.25" Text="РЕЕСТР ГРАЖДАН" HorzAlign="Center" VertAlign="Center" Font="Arial, 20pt, style=Bold"/>
+    </ReportTitleBand>
+    <PageHeaderBand Name="PageHeader1" Top="60.7" Width="718.2" Height="28.35">
+      <TextObject Name="Text2" Left="18.9" Width="141.75" Height="18.9" Text="БАРС груп" VertAlign="Center" Font="Arial, 14pt"/>
+    </PageHeaderBand>
+    <DataBand Name="Data1" Top="93.05" Width="718.2" Height="302.4" DataSource="citizens_register">
+      <TextObject Name="Text3" Left="9.45" Top="18.9" Width="179.55" Height="56.7" Text="[citizens_register.last_name]" HorzAlign="Center" VertAlign="Center" Font="Arial, 14pt"/>
+      <TextObject Name="Text4" Left="207.9" Top="18.9" Width="170.1" Height="56.7" Text="[citizens_register.first_name]" HorzAlign="Center" VertAlign="Center" Font="Arial, 14pt"/>
+      <TextObject Name="Text5" Left="396.9" Top="18.9" Width="160.65" Height="56.7" Text="[citizens_register.middle_name]" HorzAlign="Center" VertAlign="Center" Font="Arial, 14pt"/>
+      <TextObject Name="Text6" Left="576.45" Top="18.9" Width="122.85" Height="56.7" Text="[citizens_register.birthday]" HorzAlign="Center" VertAlign="Center" Font="Arial, 14pt"/>
+    </DataBand>
+    <PageFooterBand Name="PageFooter1" Top="399.45" Width="718.2" Height="37.8"/>
+  </ReportPage>
+</Report>

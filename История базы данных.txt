@@ -1,0 +1,17 @@
+
+DROP TABLE "informix".citizens_register;
+
+CREATE TABLE "informix".citizens_register(
+   id SERIAL NOT NULL,
+   last_name NVARCHAR(60) NOT NULL,
+   first_name NVARCHAR(60) NOT NULL,
+   middle_name NVARCHAR(60),
+   birthday DATE NOT NULL)
+EXTENT SIZE 32 NEXT SIZE 32 LOCK MODE ROW;
+
+CREATE INDEX "informix".birthday_index ON "informix".citizens_register(birthday);
+
+ALTER TABLE "informix".citizens_register ADD CONSTRAINT PRIMARY KEY 
+   (id) CONSTRAINT "informix".u100_1;
+
+GRANT select, update, insert, delete, index ON citizens_register TO public AS informix;

@@ -1,0 +1,70 @@
+.icon-user {
+    background-image: url(images/user.png) !important;
+}
+
+.icon-add {
+    background-image: url(images/add.png) !important;
+}
+
+.icon-delete {
+    background-image: url(images/delete.png) !important;
+}
+
+.x-ie6 .icon-user {
+    background-image: url(images/user.gif) !important;
+}
+
+.x-ie6 .icon-add {
+    background-image: url(images/add.gif) !important;
+}
+
+.x-ie6 .icon-delete {
+    background-image: url(images/delete.gif) !important;
+}
+
+.x-component {
+    padding: 10px;
+}
+
+.x-panel-header-text-default {
+    color: #0c2ef1;
+    font-family: arial;
+    font-style: italic;
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 20px;
+}
+
+.x-panel-header {
+    text-align: center;
+    padding: 5px;
+}
+.panel-1029_header_hd-textEl{
+    text-align: center;
+}
+
+.x-form-item {
+    font-size: 24px;
+}
+
+.x-form-text {
+    font-size: large;
+}
+
+.x-border-box .x-form-text {
+    height: 42px;
+}
+
+.x-grid-cell-inner{
+    text-align: center !important;
+    font-size: 22px;
+}
+
+.x-grid-with-row-lines .x-grid-cell-inner {
+    line-height: 25px !important;
+    padding-bottom: 4px;
+}
+
+.x-panel-body-default {
+    background: #dae7f6;
+}
